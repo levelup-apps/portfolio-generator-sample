@@ -25,9 +25,6 @@ interface ProjectsProps {
 export function Projects({ content }: ProjectsProps) {
   const projects: Project[] = parseProjectsFromMarkdown(content);
 
-  console.log(`....in projects....`)
-  console.log(`content: ${content}`);
-
   if (projects.length === 0) {
     return (
       <section id="projects" className="py-16 bg-white">
